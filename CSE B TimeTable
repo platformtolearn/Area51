@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>III CSE-B TimeTable</title>
+        <body bgcolor=aqua>
+			<h1><center><font color=blue> III CSE-B TimeTable</font></center></h1>
+			<table  align=center border=1>
+				<tr>
+					<th><h3>Timings→</h3><h3>Day Orders↓</h3></th>
+					<td align= center><b>9:15am-10:05am</td>
+					<td align= center><b>10:05am-10:55am</td>
+					<td align= center><b>10:55am-11:15am</td>
+					<td align= center><b>11:15am-12:05pm</td>
+					<td align= center><b>12:05pm-12:55pm</td>
+					<td align= center><b>12:55pm-1:45pm</td>
+					<td align= center><b>1:45pm-2:35pm</td>
+					<td align= center><b>2:35pm-3:25pm</td>
+					<td align= center><b>3:25pm-4:15pm</td>
+					<td align= center><b>4:15pm-5:00pm</td>
+				</tr>	
+				<tr>
+					<td align= center><b>I</td>
+					<td align= center>DS</td>
+					<td align= center>AI </td>
+					<td align= center rowspan=6><b>Tea Break</td>
+					<td align= center>IP</td>
+					<td align= center>CD</td>
+					<td align= center rowspan=6><b>Lunch Break</td>
+					<td align= center>CD lab</td>
+					<td align= center>CD lab</td>
+					<td align= center>MC</td>
+					<td align= center>DS</td>
+				</tr>
+				<tr>
+					<td align= center><b>II</td>
+					<td align= center>IP</td>
+					<td align= center>MC</td>
+					<td align= center>CD</td>
+					<td align= center>DS</td>
+					<td align= center>IP lab</td>
+					<td align= center>IP lab</td>
+					<td align= center>AI</td>
+					<td align= center>IP</td>
+				</tr>
+				<tr>
+					<td align= center><b>III</td>
+					<td align= center>CD</td>
+					<td align= center>AI </td>
+					<td align= center>MC</td>
+					<td align= center>ST</td>
+					<td align= center>ST</td>
+					<td align= center>DS</td>
+					<td align= center>IP</td>
+					<td align= center>CD</td>
+				</tr>
+				<tr>
+					<td align= center><b>IV</td>
+					<td align= center>MC</td>
+					<td align= center>CD</td>
+					<td align= center>ST</td>
+					<td align= center>IP</td>
+					<td align= center>MC lab</td>
+					<td align= center>MC lab</td>
+					<td align= center>AI</td>
+					<td align= center>MC</td>
+				</tr>
+				<tr>
+					<td align= center><b>V</td>
+					<td align= center>ST</td>
+					<td align= center>DS </td>
+					<td align= center>CD</td>
+					<td align= center>MC</td>
+					<td align= center>IP</td>
+					<td align= center>CD</td>
+					<td align= center>IP</td>
+					<td align= center>ST</td>
+				</tr>
+				<tr>
+					<td align= center><b>VI</td>
+					<td align= center>AI</td>
+					<td align= center>IP </td>
+					<td align= center>PC lab</td>
+					<td align= center>PC lab</td>
+					<td align= center>Mini Project</td>
+					<td align= center>Mini Project</td>
+					<td align= center>IP</td>
+					<td align= center>AI</td>
+				</tr>
+			</table>
+			<footer>
+				<h4> <font color=purple> Developed by Nikhil Anthony under Mrs. Vijayalakshmi [AP], T.E.C. </h4></p>
+			</footer>
+		</body>
+	 </head>
+</html>
