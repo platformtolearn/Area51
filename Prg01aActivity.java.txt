@@ -1,0 +1,132 @@
+package com.example.myapp;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+import android.graphics.Color;
+import android.graphics.Typeface;
+
+import android.view.View;
+import android.widget.TextView;
+
+import android.widget.RadioGroup;
+import android.widget.RadioButton;
+import android.widget.RadioGroup.OnCheckedChangeListener;
+
+public class Prg01aActivity extends Activity {
+
+	TextView tv1;
+	RadioGroup rg1;
+	RadioButton rb;
+
+	int fontColor=0;
+	int fontName=0;
+
+	class OCCL implements OnCheckedChangeListener {
+
+		@Override
+		public void onCheckedChanged(RadioGroup arg0, int arg1) {
+
+			rb=(RadioButton) findViewById(arg1);
+			
+			String s=rb.getText() + "";
+
+			int fs=Typeface.NORMAL;
+
+			if (s.equals("Regular")) {
+				fs=Typeface.NORMAL;
+			}
+
+			if (s.equals("Bold")) {
+				fs=Typeface.BOLD;
+			}
+
+			if (s.equals("Italic")) {
+				fs=Typeface.ITALIC;
+			}
+
+			if (s.equals("Bold italic")) {
+				fs=Typeface.BOLD_ITALIC;
+			}
+
+			setTitle(s);
+			tv1.setTypeface(null, fs);
+		}
+	}
+
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_prg01a);
+
+        tv1=(TextView) findViewById(R.id.tv1);
+        rg1=(RadioGroup) findViewById(R.id.rg1);
+
+        rg1.setOnCheckedChangeListener(new OCCL());
+	}
+
+	public void btnFS_onClick(View v) {
+
+		float f = tv1.getTextSize();
+    	f += 7;
+
+    	if (f > 28) {
+    		f=14;
+    	}
+
+    	tv1.setTextSize(f);
+    	setTitle("Font size: " + f);
+	}
+
+	public void btnFC_onClick(View v) {
+
+		fontColor += 1;
+
+		if (fontColor > 3) {
+			fontColor=0;
+			tv1.setTextColor(Color.BLACK);
+			setTitle("Font color: Black");
+		}
+
+		if (fontColor == 1) {
+			tv1.setTextColor(Color.RED);
+			setTitle("Font color: Red");
+		}
+
+		if (fontColor == 2) {
+			tv1.setTextColor(Color.GREEN);	
+			setTitle("Font color: Green");
+		}
+
+		if (fontColor == 3) {
+			tv1.setTextColor(Color.BLUE);
+			setTitle("Font color: Blue");
+		}
+	}
+
+	public void btnFN_onClick(View v) {
+
+		fontName += 1;
+
+		if (fontName > 2) {
+			fontName=0;
+		}
+
+		if (fontName == 0) {
+			tv1.setTypeface(Typeface.DEFAULT); // or Typeface.SANS_SERIF	
+			setTitle("Font name: Default");
+		}
+
+		if (fontName == 1) {
+			tv1.setTypeface(Typeface.MONOSPACE);			
+			setTitle("Font name: Monospace");
+		}
+
+		if (fontName == 2) {
+			tv1.setTypeface(Typeface.SERIF);			
+			setTitle("Font name: Serif");
+		}
+	}
+}
+
+// rb=(RadioButton) findViewById(arg0.getCheckedRadioButtonId());
